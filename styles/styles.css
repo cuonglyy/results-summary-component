@@ -26,6 +26,9 @@
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 
+
+    /* Margins */
+    --summary-comps-margin-btm: 1.6rem;
 }
 
 * {
@@ -53,6 +56,8 @@ body {
 */
 
 #container {
+    display: flex;
+    flex-direction: column;
     max-width: 37.5rem;
     font-size: 1.6rem;
     background-color: var(--white);
@@ -131,6 +136,7 @@ body {
     border-radius: 1.2rem;
     display: flex;
     align-items: center;
+    margin-bottom: var(--summary-comps-margin-btm);
 }
 
 .item__name {
@@ -189,6 +195,28 @@ body {
 
 .name--visual {
     color: var(--cobalt-blue);
+}
+
+
+/*
+    ========== BUTTON ==========
+*/
+
+button[type="button"] {
+    padding: 1.6rem 12rem;
+    margin: auto;
+    margin-top: calc(2.4rem - var(--summary-comps-margin-btm));
+    border-radius: 12.8rem;
+    border: transparent;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+button[type="button"]:active {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 }
 
 /*
