@@ -1,10 +1,114 @@
+:root {
+    /* PRIMARY COLORS */
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* GRADIENTS */
+        /* Background */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+        /* Circle */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* NEUTRAL COLORS */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Hanken Grotesk';
+    background-color: var(--pale-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====================== MOBILE DESIGN ====================== */
+
+#container {
+    max-width: 37.5rem;
+    font-size: 1.6rem;
+}
+
+#results {
+    padding: 2.4rem 0 4rem 0;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 0 0 3.2rem 3.2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* =========== RESULTS SECTION =========== */
+
+.results__header {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--light-lavender);
+}
+
+.score {
+    margin: 2.4rem 11.7rem;
+    padding: 2.3rem 3.8rem;
+    border-radius: 100%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.score-number {
+    font-size: 5.6rem;
+    line-height: 7.2rem;
+    font-weight: 800;
+    color: var(--white);
+
+}
+
+.score-total {
+    color: var(--light-lavender);
+    opacity: 0.5;
+    font-weight: 700;
+}
+
+.header--secondary {
+    color: var(--white);
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: .8rem;
+}
+
+.content {
+    margin: 0 5.7rem;
+    color: var(--light-lavender);
+}
+
 
 
 /*
     ============ FOOTER ============
 */
 footer { 
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
 }
 
 footer a {
