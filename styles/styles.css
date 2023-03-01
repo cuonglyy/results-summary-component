@@ -63,11 +63,6 @@ body {
     background-color: var(--white);
 }
 
-#results {
-    padding: 2.4rem 0 4rem 0;
-    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
-    border-radius: 0 0 3.2rem 3.2rem;
-}
 
 .text-center {
     text-align: center;
@@ -77,6 +72,12 @@ body {
 /* 
     =========== RESULTS SECTION =========== 
 */
+
+#results {
+    padding: 2.4rem 0 4rem;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 0 0 3.2rem 3.2rem;
+}
 
 .results__header {
     font-weight: 700;
@@ -219,6 +220,46 @@ button[type="button"]:active {
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 }
 
+
+/*
+    ====================== DESKTOP DESIGN ====================== 
+*/
+@media only screen and (min-width: 680px) {
+    #container {
+        flex-direction: row;
+        max-width: 73.6rem;
+        border-radius: 3.2rem;
+        font-size: 1.8rem;
+    }
+
+    /* 
+        =========== RESULTS SECTION =========== 
+    */
+
+    #results {
+        padding: 3.8rem 0 4.6rem;
+        border-radius: 3.2rem;
+    }
+
+    .results__header {
+        font-size: 2.4rem;
+    }
+
+    .score {
+        margin: 3.5rem 8.4rem 2.8rem;
+        padding: 5.5rem 6rem 4.6rem;
+    }
+
+    .score-number {
+        font-size: 7.2rem;
+    }
+
+    .header--secondary {
+        font-size: 3.2rem;
+        line-height: 4.1rem;
+    }
+}
+
 /*
     ============ FOOTER ============
 */
@@ -226,6 +267,7 @@ footer {
     font-size: 11px;
     position: absolute;
     bottom: 0;
+    margin-bottom: 1rem;
 }
 
 footer a {
