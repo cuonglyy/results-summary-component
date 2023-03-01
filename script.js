@@ -28,3 +28,4 @@ fetch('./data.json')
         //console.log(totalScore);
         scoreNum.textContent = totalScore;
     })
+    .catch(error => console.log(error));
