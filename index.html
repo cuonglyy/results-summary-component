@@ -15,7 +15,7 @@
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
-  <div id="container">
+  <main id="container">
     <section id="results">
       <h1 class="results__header text-center">Your Result</h1>
       <div class="score text-center">
@@ -27,9 +27,41 @@
     </section>
 
     <section id="summary">
-      <h2 class="summary__header"></h2>
+      <h2 class="summary__header">Summary</h2>
+      <div class="item item--reaction">
+        <div class="item__icon"><img src="./assets/images/icon-reaction.svg"></div>
+        <p class="item__name name--reaction">Reaction</p>
+        <div class="item__score">
+          <span class="item__score-num">80</span>
+          <span class="item__score-total">/ 100</span>
+        </div>
+      </div>
+      <div class="item item--memory">
+        <div class="item__icon"><img src="./assets/images/icon-memory.svg"></div>
+        <p class="item__name name--memory">Memory</p>
+        <div class="item__score">
+          <span class="item__score-num">92</span>
+          <span class="item__score-total">/ 100</span>
+        </div>
+      </div>
+      <div class="item item--verbal">
+        <div class="item__icon"><img src="./assets/images/icon-verbal.svg"></div>
+        <p class="item__name name--verbal">Verbal</p>
+        <div class="item__score">
+          <span class="item__score-num">61</span>
+          <span class="item__score-total">/ 100</span>
+        </div>
+      </div>
+      <div class="item item--visual">
+        <div class="item__icon"><img src="./assets/images/icon-visual.svg"></div>
+        <p class="item__name name--visual">Visual</p>
+        <div class="item__score">
+          <span class="item__score-num">73</span>
+          <span class="item__score-total">/ 100</span>
+        </div>
+      </div>
     </section>
-  </div>
+  </main>
 
   <!------
     Your Result

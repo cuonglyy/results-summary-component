@@ -5,6 +5,13 @@
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
 
+    /* BACKGROUND COLORS*/
+    --bkgnd-light-red: hsla(0, 100%, 67%, 0.09);
+    --bkgnd-orange-yellow: hsla(39, 100%, 56%, 0.09);
+    --bkgnd-green-teal: hsla(166, 100%, 37%, 0.09);
+    --bkgnd-cobalt-blue: hsla(234, 85%, 45%, 0.09);
+
+
     /* GRADIENTS */
         /* Background */
     --light-slate-blue: hsl(252, 100%, 67%);
@@ -41,11 +48,14 @@ body {
     align-items: center;
 }
 
-/* ====================== MOBILE DESIGN ====================== */
+/* 
+    ====================== MOBILE DESIGN ====================== 
+*/
 
 #container {
     max-width: 37.5rem;
     font-size: 1.6rem;
+    background-color: var(--white);
 }
 
 #results {
@@ -59,7 +69,9 @@ body {
 }
 
 
-/* =========== RESULTS SECTION =========== */
+/* 
+    =========== RESULTS SECTION =========== 
+*/
 
 .results__header {
     font-weight: 700;
@@ -100,7 +112,84 @@ body {
     color: var(--light-lavender);
 }
 
+/*
+    =========== SUMMARY SECTION ===========
+*/
 
+#summary {
+    margin: 2.4rem 3rem;
+}
+
+.summary__header {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.item {
+    width: 31.5rem;
+    padding: 1.8rem 1.6rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.item__name {
+    margin-left: 1.2rem;
+}
+
+.item__score {
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.item__score-num {
+    margin-right: .4rem;
+}
+
+.item__score-total {
+    color: var(--dark-gray-blue);
+    opacity: 0.5;
+}
+
+/* Reaction */
+
+.item--reaction {
+    background-color: var(--bkgnd-light-red);
+}
+
+.name--reaction {
+    color: var(--light-red);
+}
+
+/* Memory */
+
+.item--memory {
+    background-color: var(--bkgnd-orange-yellow);
+}
+
+.name--memory {
+    color: var(--orange-yellow);
+}
+
+/* Verbal */
+
+.item--verbal {
+    background-color: var(--bkgnd-green-teal);
+}
+
+.name--verbal {
+    color: var(--green-teal);
+}
+
+/* Visual */ 
+
+.item--visual {
+    background-color: var(--bkgnd-cobalt-blue);
+}
+
+.name--visual {
+    color: var(--cobalt-blue);
+}
 
 /*
     ============ FOOTER ============
