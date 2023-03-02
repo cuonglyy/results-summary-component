@@ -257,6 +257,11 @@ button[type="button"]:active {
     .header--secondary {
         font-size: 3.2rem;
         line-height: 4.1rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .content {
+        margin: 0 5.4rem;
     }
 }
 
