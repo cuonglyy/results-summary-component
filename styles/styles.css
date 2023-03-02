@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* 
@@ -263,6 +264,32 @@ button[type="button"]:active {
     .content {
         margin: 0 5.4rem;
     }
+
+    /*
+        =========== SUMMARY SECTION ===========
+    */
+
+    #summary {
+        margin: 3.8rem 4rem 4.6rem;
+    }
+
+    .summary__header {
+        font-size: 2.4rem;
+    }
+
+    .item {
+        width: 28.8rem;
+        padding: 1.7rem 1.6rem;
+    }
+
+    /*
+        ========== BUTTON ==========
+    */
+
+    button[type="button"] {
+        padding: 1.6rem 10.7rem;
+        margin-top: calc(4rem - var(--summary-comps-margin-btm));
+    }
 }
 
 /*
@@ -270,9 +297,6 @@ button[type="button"]:active {
 */
 footer { 
     font-size: 11px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 1rem;
 }
 
 footer a {
